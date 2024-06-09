@@ -1,16 +1,18 @@
 .body_inicio{
-background-image: url("fondoinic.jpg");
+  background-image: url("fondoinic.jpg");
     color: #ffffff;
     text-align: center;
+    min-height: 100vh;
 }
+
 .body_trabajos{
-    background-color: #000D3C;
+    background-color: #153D61;
 }
 .body_sobre_mi{
-    background-color: #000D3C;
+    background-color: #153D61;
 }
 .body_contacto{
-    background-color: #000D3C;
+    background-color: #153D61;
 }
 h1{
     color: rgb(255, 255, 255);
@@ -39,34 +41,38 @@ img{
     color: #ffffff;
 }
   form{
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: #ffffff;
-
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1) 
+    padding 50;
 }
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-items: left;
     height: 40px;
     background-color: black;
+    opacity: 50%;
     margin: 0;
     align-items: center;
     padding: 10px;
 }
 
-.logo{
-    height: 7px;
-    width: 7x;
-}
 
 div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
-    float: center;
-    width: 400px;
+    float: left;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   div.gallery:hover {
-    border: 1px solid #777;
+    border: 5px solid #0c0d30;
+    transform: rotate(-1deg);
   }
   
   div.gallery img {
@@ -77,8 +83,14 @@ div.gallery {
   div.desc {
     padding: 12px;
     text-align: center;
+    background-color: #ffffff;
   }
   
   .nav{
     text-align: left;
+  }
+  .registrarte{
+    text-decoration-color: #153D61;
+    color: rgb(28, 62, 132);
+    
   }

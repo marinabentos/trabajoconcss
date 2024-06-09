@@ -5,46 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
+    <script>
+        alert("Recorda registrarte si no tenes una cuenta")
+    </script>
+    <script src="./index.js"></script>
 </head>
 <body class="body_inicio"></body>
     <div class="contenedor-header">
         <header>
             <div class="logo">
-            <a href="#"> Marina </a>
-            <img src="" alt="logo">
+                <a href="#"> Marina Bentos Pollak </a>
+
             </div>
             <nav id="nav">
-            <ul style="text-align: left;">
-                <a href="#">INICIO</a>
-                <a href=".\sobre_mi\index.html">SOBRE MI</a>
-                <a href=".\trabajos\index.html">TRABAJOS</a>    
-                <a href=".\contacto\index.html">CONTACTO</a> 
-            </ul>
+                 <ul style="text-align: right;">
+                    <a href="#">INICIO</a>
+                    <a href=".\sobre_mi\index.html">SOBRE MI</a>
+                    <a href=".\trabajos\index.html">TRABAJOS</a>    
+                    <a href=".\contacto\index.html">CONTACTO</a> 
+                 </ul>
             </nav>
+           
+
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-            <i class="fa-solid fa-bars"></i> <!-- 3 lineas responsive -->
+                <i class="fa-solid fa-bars"></i> <!-- 3 lineas responsive -->
             </div>
-    </header>
+        </header>
+    <div class ="main">
+        <h1>Bienvenidos!</h1>
+        <p>Mi nombre es Marina</p>
+         <p>soy estudiante de diseño y animacion digital</p>
+        <p>en esta pagina encontraras mis proyectos</p>
+        <br>
+    </div>
 
-
- <div class ="main">
-     <h1>Bienvenidos!</h1>
-     <p>Mi nombre es Marina</p>
-     <p>soy estudiante de diseño y animacion digital</p>
-     <p>en esta pagina encontraras mis proyectos</p>
-     <br>
-</div>
-
-<form action="/action_page.php">
-         <label for="fname"> Usuario:</label>
-         <input type="text" id="fname" name="fname"><br><br>
-         <label for="lname">Contraseña:</label>
-         <input type="text" id="lname" name="lname"><br><br>
+    <form action="/action_page.php">
+         <label for="Usuario"> Usuario:</label>
+         <input type="text" id="usuario"  placeholder="ingrsar usuario"><br><br>
+         <label for="password">Contraseña:</label>
+         <input type="password" id="Contraseña" placeholder="ingrsar Contraseña" required><br><br>
          <br>
-            <input type="checkbox">Deseo recibir información sobre novedades <br><br>
-            <button>Iniciar</button>
-          </form></center>
-        </div>
+         <br>
+                <div class="registrarte">
+                 <a href="#"><p>registrarte</p></a>
+                </div>
+                <button onclick="validarFormulario()">Enviar</button>
+            <script>
+                function validarFormulario() {
+                  const usuario = document.getElementById('usuario').value;
+                  const Contraseña = document.getElementById('Contraseña').value;
+              
+                  if (usuario.trim() === '') {
+                    document.getElementById('usuario').style.borderColor = 'red';
+                  } else {
+                    document.getElementById('usuario').style.borderColor = 'initial';
+                  }
+              
+                  // Validación de correo electrónico (puedes usar una expresión regular)
+                  const ContraseñaValida = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
+                  if (!ContraseñaValida.test(Contraseña)) {
+                    document.getElementById('Contraseña').style.borderColor = 'red';
+                  } else {
+                    document.getElementById('').style.borderColor = 'initial';
+                    document.getElementById('Contraseña').style.borderColor = 'initial';
+                  }
+                }
+              </script>
+          </form>
+
         
-        </body>
-        </html>
+</body>
+
+</html>
