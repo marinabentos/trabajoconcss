@@ -1,0 +1,84 @@
+.body_inicio{
+background-image: url("fondoinic.jpg");
+    color: #ffffff;
+    text-align: center;
+}
+.body_trabajos{
+    background-color: #000D3C;
+}
+.body_sobre_mi{
+    background-color: #000D3C;
+}
+.body_contacto{
+    background-color: #000D3C;
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+p{ 
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+img{
+    width: 150;height: 350;
+}
+
+ a{
+    text-align: center;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+  form{
+    color: #ffffff;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    background-color: black;
+    margin: 0;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo{
+    height: 7px;
+    width: 7x;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: center;
+    width: 400px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 12px;
+    text-align: center;
+  }
+  
+  .nav{
+    text-align: left;
+  }
